@@ -20,7 +20,7 @@
                 attempts = 0;
 
             while(count < number_of_words && attempts < 1000) {
-                var index = Math.floor(Math.random() * len) + 1,
+                var index = Math.floor(Math.random() * len),
                     word = words[index].toLowerCase().replace(/[^a-z]*/,'');
                 if (word.length >= min_word_length) {
                     password.push(word);
